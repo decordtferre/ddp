@@ -42,7 +42,7 @@ void mp_sub(uint32_t *a, uint32_t *b, uint32_t *res, uint32_t size)
     int64_t c = 0;                                   // carry (borrow): 0 or -1
 
     for (uint32_t i = 0; i < size; i++) {
-        int64_t diff = (int64_t)a[i] - b[i] + c;     // can be negative
+        int64_t diff = (int64_t)a[i] -  (int64_t)b[i] + c;     // can be negative
         res[i] = (uint32_t)diff;                     // diff mod 2^32
 
         if (diff >= 0)
@@ -65,8 +65,8 @@ void mod_add(uint32_t *a, uint32_t *b, uint32_t *N, uint32_t *res, uint32_t size
 	    }
 
 	    // step (4): if t >= n, subtract n
-	    if (c == 1 || mp_geq(res, n, size))
-	        mp_sub(res, n, res, size);
+	    if (c == 1 || mp_geq(res, N, size))
+	        mp_sub(res, N, res, size);
 
 }
 
@@ -74,6 +74,12 @@ void mod_add(uint32_t *a, uint32_t *b, uint32_t *N, uint32_t *res, uint32_t size
 // a and b represent operands, N is the modulus. They are large integers stored in uint32_t arrays of size elements
 void mod_sub(uint32_t *a, uint32_t *b, uint32_t *N, uint32_t *res, uint32_t size)
 {
+		if (mp_geq(a,b, size)) {
+			mp_sub(a,b, res, size);
+		} else {
+			mp_sub(b, a, res, size);
+			mp_sub(N, res, res, size);
 
+		}
 }
 

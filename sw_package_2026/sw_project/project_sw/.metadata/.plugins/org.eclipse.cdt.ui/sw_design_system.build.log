@@ -1,0 +1,12 @@
+14:10:10 **** Build of configuration Debug for project sw_design_system ****
+make all 
+make[1]: Entering directory '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/Debug'
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/ecc_project_wrapper.xpfm -domains standalone_domain -bifpath /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/ecc_project_wrapper.xpfm --sys_config ecc_project_wrapper --bif /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/Debug/system.bif --bitstream /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit --elf /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf,ps7_cortexa9_0
+creating BOOT.BIN using /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit
+Running /esat/micas-data/software/Xilinx/vitis_2023.1/Vitis/2023.1/bin/bootgen  -image /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+make[1]: Leaving directory '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/Debug'
+
+14:10:16 Build Finished (took 5s.976ms)
+

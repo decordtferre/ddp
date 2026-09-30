@@ -1,0 +1,86 @@
+2026-09-30T14:10:09.09404400255-14:10:09 **** Build of configuration Debug for project sw_design ****
+000-make all 
+000-make[1]: Entering directory '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug'
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000- 
+000-make --no-print-directory main-build
+000-Building file: ../src/platform/interface.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/interface.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform/interface.d" -MT"src/platform/interface.o" -o "src/platform/interface.o" "../src/platform/interface.c"
+000-Finished building: ../src/platform/interface.c
+000- 
+000-Building file: ../src/platform/platform.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+000-Finished building: ../src/platform/platform.c
+000- 
+000-Building file: ../src/asm_func.S
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/asm_func.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/asm_func.d" -MT"src/asm_func.o" -o "src/asm_func.o" "../src/asm_func.S"
+000-Finished building: ../src/asm_func.S
+000- 
+000-Building file: ../src/main.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+000-Finished building: ../src/main.c
+000- 
+000-Building file: ../src/montgomery.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/montgomery.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/montgomery.d" -MT"src/montgomery.o" -o "src/montgomery.o" "../src/montgomery.c"
+000-Finished building: ../src/montgomery.c
+000- 
+000-Building file: ../src/mp_arith.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mp_arith.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/mp_arith.d" -MT"src/mp_arith.o" -o "src/mp_arith.o" "../src/mp_arith.c"
+000-Finished building: ../src/mp_arith.c
+000- 
+000-Building file: ../src/warmup.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/warmup.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/warmup.d" -MT"src/warmup.o" -o "src/warmup.o" "../src/warmup.c"
+000-../src/warmup.c: In function 'warmup':
+000/sw_design/src/warmup.c24-1-1unused variable 'i' [-Wunused-variable]1-../src/warmup.c:24:17: warning: unused variable 'i' [-Wunused-variable]
+000-   24 |         int32_t i;
+000-      |                 ^
+000-In file included from ../src/common.h:10,
+000-                 from ../src/warmup.c:9:
+000-../src/platform/performance.h: At top level:
+000/sw_design/src/platform/performance.h6-1-1'time_start' defined but not used [-Wunused-variable]1time_start../src/platform/performance.h:6:17: warning: 'time_start' defined but not used [-Wunused-variable]
+000-    6 | static uint32_t time_start;
+000-      |                 ^~~~~~~~~~
+000-../src/warmup.c: In function 'warmup':
+000/sw_design/src/warmup.c50-1-1'a' is used uninitialized [-Wuninitialized]1-../src/warmup.c:50:5: warning: 'a' is used uninitialized [-Wuninitialized]
+000-   50 |     xil_printf("Value of a = %x\r\n", a);
+000-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/sw_design/src/warmup.c46-1-1'a' was declared here0-../src/warmup.c:46:13: note: 'a' was declared here
+000-   46 |     int32_t a;
+000-      |             ^
+000/sw_design/src/warmup.c51-1-1'b' is used uninitialized [-Wuninitialized]1-../src/warmup.c:51:5: warning: 'b' is used uninitialized [-Wuninitialized]
+000-   51 |     xil_printf("Value of b = %x\r\n", b);
+000-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/sw_design/src/warmup.c47-1-1'b' was declared here0-../src/warmup.c:47:13: note: 'b' was declared here
+000-   47 |     uint8_t b;
+000-      |             ^
+000/sw_design/src/warmup.c52-1-1'c' is used uninitialized [-Wuninitialized]1-../src/warmup.c:52:5: warning: 'c' is used uninitialized [-Wuninitialized]
+000-   52 |     xil_printf("Value of c = %x\r\n", c);
+000-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/sw_design/src/warmup.c48-1-1'c' was declared here0-../src/warmup.c:48:14: note: 'c' was declared here
+000-   48 |     int32_t *c;                         // This is a pointer
+000-      |              ^
+000-Finished building: ../src/warmup.c
+000- 
+000-Building target: sw_design.elf
+000-Invoking: ARM v7 gcc linker
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/bsplib/lib -o "sw_design.elf" ./src/platform/interface.o ./src/platform/platform.o  ./src/asm_func.o ./src/main.o ./src/montgomery.o ./src/mp_arith.o ./src/warmup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-Finished building target: sw_design.elf
+000- 
+000-Invoking: ARM v7 Print Size
+000-arm-none-eabi-size sw_design.elf  |tee "sw_design.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  56199	   2552	  22648	  81399	  13df7	sw_design.elf
+000-Finished building: sw_design.elf.size
+000- 
+000-make[1]: Leaving directory '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug'
+00255-
+14:10:09 Build Finished (took 714ms)
+

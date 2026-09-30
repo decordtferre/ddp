@@ -1,0 +1,155 @@
+14:05:27 DEBUG : Logs will be stored at '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/IDE.log'.
+14:05:27 INFO  : Registering command handlers for Vitis TCF services
+14:05:27 INFO  : Platform repository initialization has completed.
+14:05:27 INFO  : Successfully done query RDI_DATADIR 
+14:05:28 INFO  : plnx-install-location is set to ''
+14:05:37 INFO  : Platform 'ecc_project_wrapper' is added to custom repositories.
+14:05:57 INFO  : Checking for BSP changes to sync application flags for project 'sw_design'...
+14:06:16 DEBUG : Logs will be stored at '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/IDE.log'.
+14:06:17 INFO  : Launching XSCT server: xsct -n  -interactive /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/temp_xsdb_launch_script.tcl
+14:06:18 INFO  : XSCT server has started successfully.
+14:06:18 INFO  : Successfully done setting XSCT server connection channel  
+14:06:18 INFO  : plnx-install-location is set to ''
+14:06:18 INFO  : Successfully done setting workspace for the tool. 
+14:06:38 INFO  : Registering command handlers for Vitis TCF services
+14:06:38 INFO  : Platform repository initialization has completed.
+14:06:39 INFO  : Successfully done query RDI_DATADIR 
+14:10:04 INFO  : Result from executing command 'getProjects': ecc_project_wrapper
+14:10:04 INFO  : Result from executing command 'getPlatforms': ecc_project_wrapper|/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/ecc_project_wrapper.xpfm;xilinx_zcu102_base_202310_1|/esat/micas-data/software/Xilinx/vitis_2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/esat/micas-data/software/Xilinx/vitis_2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/esat/micas-data/software/Xilinx/vitis_2023.1/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+14:10:07 INFO  : Checking for BSP changes to sync application flags for project 'sw_design'...
+14:13:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:13:50 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:13:50 INFO  : 'jtag frequency' command is executed.
+14:13:50 INFO  : Context for 'APU' is selected.
+14:13:50 INFO  : System reset is completed.
+14:13:53 INFO  : 'after 3000' command is executed.
+14:13:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+14:13:56 INFO  : Device configured successfully with "/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit"
+14:13:56 INFO  : Context for 'APU' is selected.
+14:13:56 INFO  : Hardware design and registers information is loaded from '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa'.
+14:13:56 INFO  : 'configparams force-mem-access 1' command is executed.
+14:13:56 INFO  : Context for 'APU' is selected.
+14:13:56 INFO  : Sourcing of '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl' is done.
+14:13:56 INFO  : 'ps7_init' command is executed.
+14:13:56 INFO  : 'ps7_post_config' command is executed.
+14:13:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:56 INFO  : The application '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:13:56 INFO  : 'configparams force-mem-access 0' command is executed.
+14:13:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:13:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:56 INFO  : 'con' command is executed.
+14:13:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:13:56 INFO  : Launch script is exported to file '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/_ide/scripts/debugger_sw_design-default.tcl'
+14:18:36 INFO  : Disconnected from the channel tcfchan#3.
+14:18:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:18:38 INFO  : 'jtag frequency' command is executed.
+14:18:38 INFO  : Context for 'APU' is selected.
+14:18:38 INFO  : System reset is completed.
+14:18:41 INFO  : 'after 3000' command is executed.
+14:18:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+14:18:43 INFO  : Device configured successfully with "/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit"
+14:18:43 INFO  : Context for 'APU' is selected.
+14:18:43 INFO  : Hardware design and registers information is loaded from '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa'.
+14:18:43 INFO  : 'configparams force-mem-access 1' command is executed.
+14:18:43 INFO  : Context for 'APU' is selected.
+14:18:43 INFO  : Sourcing of '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl' is done.
+14:18:43 INFO  : 'ps7_init' command is executed.
+14:18:43 INFO  : 'ps7_post_config' command is executed.
+14:18:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:43 INFO  : The application '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:18:43 INFO  : 'configparams force-mem-access 0' command is executed.
+14:18:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:18:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:43 INFO  : 'con' command is executed.
+14:18:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:18:43 INFO  : Launch script is exported to file '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/_ide/scripts/debugger_sw_design-default.tcl'
+14:18:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:44 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:18:44 INFO  : 'jtag frequency' command is executed.
+14:18:44 INFO  : Context for 'APU' is selected.
+14:18:44 INFO  : System reset is completed.
+14:18:47 INFO  : 'after 3000' command is executed.
+14:18:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+14:18:50 INFO  : Device configured successfully with "/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit"
+14:18:50 INFO  : Context for 'APU' is selected.
+14:18:50 INFO  : Hardware design and registers information is loaded from '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa'.
+14:18:50 INFO  : 'configparams force-mem-access 1' command is executed.
+14:18:50 INFO  : Context for 'APU' is selected.
+14:18:50 INFO  : Sourcing of '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl' is done.
+14:18:50 INFO  : 'ps7_init' command is executed.
+14:18:50 INFO  : 'ps7_post_config' command is executed.
+14:18:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:50 INFO  : The application '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:18:50 INFO  : 'configparams force-mem-access 0' command is executed.
+14:18:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:18:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:50 INFO  : 'con' command is executed.
+14:18:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:18:50 INFO  : Launch script is exported to file '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/_ide/scripts/debugger_sw_design-default.tcl'

@@ -1,0 +1,8 @@
+Wed Oct  7 14:21:11 2026: Server was asked to start on port: '46427'
+Wed Oct  7 14:21:11 2026: Server is using token UUID: 'debe9ec6-fa82-4882-955e-3910100ebc7b'
+Wed Oct  7 14:21:11 2026: Attempting to start server on port '46427'
+Wed Oct  7 14:21:11 2026: XRC main fifo: created main fifo '/tmp/xrcmaindebe9ec6-fa82-4882-955e-3910100ebc7b', fd read = 11
+Wed Oct  7 14:21:11 2026: Running Rule Check Server
+Wed Oct  7 14:21:11 2026: Version 1.6.1
+Wed Oct  7 14:21:11 2026: Rule Check Server: Accepted socket connection from client
+Wed Oct  7 14:21:11 2026: EXCHANGE_TOKEN received, server token: debe9ec6-fa82-4882-955e-3910100ebc7b, passed token: debe9ec6-fa82-4882-955e-3910100ebc7b

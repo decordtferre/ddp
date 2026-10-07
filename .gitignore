@@ -1,3 +1,49 @@
 sw_package_2026/sw_project/project_sw/.metadata/
 sw_package_2026/sw_project/project_sw/.metadata/.
 .DS_Store
+
+# --- Build artifacts ---
+*.o
+*.obj
+*.d
+*.out
+*.elf
+*.bin
+*.hex
+*.srec
+
+# --- Libraries & Archives ---
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# --- Output directories & Executables ---
+build/
+bin/
+out/
+debug/
+release/
+
+# Vervang 'main' of 'montgomery' door de naam van je gegenereerde executable (zonder extensie)
+# main
+# test_montgomery
+
+# --- Dependency files (gegenereerd door gcc -MMD / make) ---
+.deps/
+*.d
+
+# --- Editor & IDE metadata ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- Embedded / Toolchain logs (bijv. Xilinx / Vitis / Vivado) ---
+*.log
+*.jou
+.Xil/

@@ -1,0 +1,16 @@
+14:20:20 DEBUG : Logs will be stored at '/users/students/r0994307/Documents/ddp/sw_package_2026/sw_project/project_sw/IDE.log'.
+14:20:20 INFO  : Registering command handlers for Vitis TCF services
+14:20:20 INFO  : Platform repository initialization has completed.
+14:20:20 INFO  : Successfully done query RDI_DATADIR 
+14:20:20 INFO  : plnx-install-location is set to ''
+14:20:30 INFO  : Platform 'ecc_project_wrapper' is added to custom repositories.
+14:20:50 INFO  : Checking for BSP changes to sync application flags for project 'sw_design'...
+14:21:03 DEBUG : Logs will be stored at '/users/students/r0994307/Documents/ddp/sw_package_2026/sw_project/project_sw/IDE.log'.
+14:21:03 INFO  : Launching XSCT server: xsct -n  -interactive /users/students/r0994307/Documents/ddp/sw_package_2026/sw_project/project_sw/temp_xsdb_launch_script.tcl
+14:21:05 INFO  : XSCT server has started successfully.
+14:21:05 INFO  : plnx-install-location is set to ''
+14:21:05 INFO  : Successfully done setting XSCT server connection channel  
+14:21:05 INFO  : Successfully done setting workspace for the tool. 
+14:21:10 INFO  : Registering command handlers for Vitis TCF services
+14:21:10 INFO  : Successfully done query RDI_DATADIR 
+14:21:10 INFO  : Platform repository initialization has completed.

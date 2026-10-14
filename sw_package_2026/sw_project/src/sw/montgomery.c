@@ -90,6 +90,8 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t 
 
 	}
 
+	
+
 	sub_cond(t, n, size);
 	for (uint32_t k = 0; k <= size; k++) {
 		res[k] = t[k];
@@ -105,20 +107,27 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t 
 // Optimised ASM version
 void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t *res, uint32_t size)
 {
+	// Same algorithm as montMul, but:
+	// - t is a stack array instead of calloc/free (malloc is slow on the board)
+	// - the three inner loops are assembly functions (asm_func.S), see the
+	//   comment at the top of that file for how and why
+	// - the result is only copied into res at the very end, so res may be the
+	//   same array as a or b
 	uint32_t t[size + 2];
 	uint32_t nprime_0 = n_prime[0];
 	uint32_t C;
 	uint64_t sum;
-	uint8_t i;
-	uint8_t j;
+	uint32_t i;
 
 	for (i = 0; i < size + 2; i++) {
 		t[i] = 0;
 	}
 
+	// t = lower half of a*b (products a[j]*b[i] with i + j < size)
 	for (i = 0; i < size; i++) {
-		C = mul_add_row(&t[i], a, b[i], size - i);
+		C = mul_add_row(&t[i], a, b[i], size - i); // t[i..size-1] += a*b[i], umaal
 
+		// small carry tail, runs only size times: not worth assembly
 		sum = (uint64_t)t[size] + (uint64_t)C;
 		C = (sum >> 32);
 		t[size] = (uint32_t)sum;
@@ -126,16 +135,10 @@ void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32
 	}
 
 	for (i = 0; i < size; i++) {
-
+		// reduction: choose m so that t + m*n has a zero lowest word,
+		// then divide by 2^32 by shifting t down one word
 		uint32_t m = t[0] * nprime_0; // onderste 32 bit selecteren adhv 32 bit type
-		sum = (uint64_t)t[0] + (uint64_t)m*(uint64_t)n[0];
-		C = (sum >> 32);
-
-		for (j = 1; j < size; j++) {
-			sum = (uint64_t)t[j] + (uint64_t)m * (uint64_t)n[j] + (uint64_t)C;
-			C = (sum >> 32);
-			t[j - 1] = (uint32_t)sum;
-		}
+		C = mul_add_shift(t, n, m, size); // t = (t + m*n) / 2^32, umaal
 
 		sum = (uint64_t)t[size] + (uint64_t)C;
 		C = (sum >> 32);
@@ -143,16 +146,9 @@ void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32
 		t[size] = t[size + 1] + C;
 		t[size + 1] = 0;
 
-		for (j = i+1; j < size; j++) {
-			sum = (uint64_t)t[size - 1] + (uint64_t)b[j] * (uint64_t)a[size - j + i];
-			C = (sum >> 32);
-			t[size - 1] = (uint32_t)sum;
-			sum = (uint64_t)t[size] + (uint64_t)C;
-			C = (sum >> 32);
-			t[size] = (uint32_t)sum;
-			t[size + 1] = t[size + 1] + C;
-		}
-
+		// add the next column of the upper half of a*b: b[j]*a[k] with
+		// j + k = size + i, into the 3-word accumulator t[size-1..size+1]
+		mul_add_col(&t[size - 1], &b[i + 1], &a[size - 1], size - 1 - i);
 	}
 
 	sub_cond(t, n, size);

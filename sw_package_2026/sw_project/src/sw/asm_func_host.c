@@ -21,4 +21,29 @@ uint32_t mul_add_row(uint32_t *t, uint32_t *a, uint32_t bi, uint32_t len)
 	return C;
 }
 
+uint32_t mul_add_shift(uint32_t *t, uint32_t *n, uint32_t m, uint32_t size)
+{
+	uint64_t sum = (uint64_t)t[0] + (uint64_t)n[0]*m;
+	uint32_t C = (sum >> 32);
+	for (uint32_t j = 1; j < size; j++) {
+		sum = (uint64_t)t[j] + (uint64_t)n[j]*m + C;
+		C = (sum >> 32);
+		t[j - 1] = (uint32_t)sum;
+	}
+	return C;
+}
+
+void mul_add_col(uint32_t *t, uint32_t *b, uint32_t *a, uint32_t len)
+{
+	for (uint32_t j = 0; j < len; j++) {
+		uint64_t sum = (uint64_t)t[0] + (uint64_t)b[j] * a[-(int32_t)j];
+		uint32_t C = (sum >> 32);
+		t[0] = (uint32_t)sum;
+		sum = (uint64_t)t[1] + C;
+		C = (sum >> 32);
+		t[1] = (uint32_t)sum;
+		t[2] = t[2] + C;
+	}
+}
+
 #endif

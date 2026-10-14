@@ -30,5 +30,14 @@ void multiply(uint32_t i, uint32_t *t, uint32_t *a, uint32_t *b, uint32_t *m, ui
 // Returns the final carry C
 uint32_t mul_add_row(uint32_t *t, uint32_t *a, uint32_t bi, uint32_t len);
 
+// Montgomery reduction step, size must be >= 1:
+// {C, -} = t[0] + n[0]*m, then for j in 1..size-1: {C, t[j-1]} = t[j] + n[j]*m + C
+// Returns the final carry C
+uint32_t mul_add_shift(uint32_t *t, uint32_t *n, uint32_t m, uint32_t size);
+
+// 96-bit accumulate: for len steps {t[2], t[1], t[0]} += b[j] * a[k],
+// with b going up and a going DOWN (a points to the first a[k] to use)
+void mul_add_col(uint32_t *t, uint32_t *b, uint32_t *a, uint32_t len);
+
 
 #endif /* ASM_FUNC_H_ */

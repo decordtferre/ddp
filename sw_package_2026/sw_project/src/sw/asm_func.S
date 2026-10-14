@@ -73,9 +73,32 @@ multiply:
 	bx lr
 .endfunc
 
+.text
 
+.global mul_add_row
+.func mul_add_row, mul_add_row
+.type mul_add_row, %function
 
-
+@ r0 = t, r1 = a, r2 = bi, r3 = len
+@ for j in 0..len-1: {C, t[j]} = t[j] + a[j]*bi + C
+@ returns the final carry C in r0
+mul_add_row:
+	push {r4, r5}
+	mov r4, #0					@ C = 0
+	cmp r3, #0
+	beq mul_add_row_end
+mul_add_row_loop:
+	ldr r5, [r0]				@ r5 = t[j]
+	ldr r12, [r1], #4			@ r12 = a[j], a++
+	umaal r5, r4, r12, r2		@ {r4, r5} = a[j]*bi + t[j] + C
+	str r5, [r0], #4			@ t[j] = low word, t++
+	subs r3, r3, #1
+	bne mul_add_row_loop
+mul_add_row_end:
+	mov r0, r4					@ return C
+	pop {r4, r5}
+	bx lr
+.endfunc
 
 
 @USEFUL FUNCTIONS

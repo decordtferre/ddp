@@ -1,6 +1,8 @@
-# check ZYNQ environment variable
+# check ZYNQ environment variable (not needed for the host target)
+ifneq ($(MAKECMDGOALS),host)
 ifndef ZYNQ
 $(error Please source the source_me file first for the environment variables!)
+endif
 endif
 
 all: 
@@ -9,6 +11,7 @@ all:
 	@echo " open      - to open the created project"
 	@echo " clean     - to delete the project files (your design in \src will be saved)"
 	@echo " hw_import - to import the most updated HDF from Vivado"
+	@echo " host      - to compile and run the C code on this PC (no board, no asm)"
 
 open:
 	vitis -workspace ./project_sw &
@@ -25,5 +28,10 @@ build:
 	ln -s ../../src/sw/ project_sw/sw_design/src
 	rm project_sw/sw_design/Debug/src/helloworld.o
 	rm project_sw/sw_design/Debug/src/helloworld.d		
+.PHONY: host
+host:
+	gcc -g -O0 -Wall -DHOST src/sw/main.c src/sw/montgomery.c src/sw/asm_func_host.c -o host_main
+	./host_main
+
 clean:
 	rm -rf vitis.* vitis_* .Xil/ webtalk* project_sw

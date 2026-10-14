@@ -26,5 +26,9 @@ uint32_t arr_copy(uint32_t *a, uint32_t *b, uint32_t n);
 // pointer to n array is stored in [SP, #4] (one position above m)
 void multiply(uint32_t i, uint32_t *t, uint32_t *a, uint32_t *b, uint32_t *m, uint32_t *n);
 
+// for j in 0..len-1: {C, t[j]} = t[j] + a[j]*bi + C, with C starting at 0
+// Returns the final carry C
+uint32_t mul_add_row(uint32_t *t, uint32_t *a, uint32_t bi, uint32_t len);
+
 
 #endif /* ASM_FUNC_H_ */

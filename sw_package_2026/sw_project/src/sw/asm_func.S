@@ -59,17 +59,17 @@ multiply:
 	// If more registers are used in the function make sure to do push them on the stack to preserve them
 	ldr r4, [sp, #24]		@m pointer is stored in R4
 	ldr r5, [sp, #28]		@n pointer is stored in R5
-	add r1, r1, r0, lsl #2
-	ldr r6, [r4]
-	ldr r7, [r5]
-	umull r8, r9, r6, r7
-	ldr r6, [r2]
-	ldr r7, [r3]
-	umull r4, r5, r6, r7
-	adds r8, r8, r4
-	adc r9, r9, r5
-	stmia r1, {r8, r9}
-	pop {r4-r9}
+	add r1, r1, r0, lsl #2 		// r1 = r1 + r0 * 4 calculate destination address
+	ldr r6, [r4] 				// Load value from memory pointed by r4 into r6
+	ldr r7, [r5] 				// Load value from memory pointed by r5 into r7
+	umull r8, r9, r6, r7 		// Multiply r6 and r7, store lower 32 bits in r8 and higher 32 bits in r9
+	ldr r6, [r2] 				// Load value from memory pointed by r2 into r6
+	ldr r7, [r3] 				// Load value from memory pointed by r3 into r7
+	umull r4, r5, r6, r7 		// Multiply r6 and r7, store lower 32 bits in r4 and higher 32 bits in r5
+	adds r8, r8, r4 			// Add lower 32 bits of second multiplication to r8 with carry
+	adc r9, r9, r5 				// Add higher 32 bits of second multiplication to r9 with carry
+	stmia r1, {r8, r9} 			// Store the result of the multiplication to memory starting at address in r1
+	pop {r4-r9} 				// Restore the values of r4 to r9 from the stack
 	bx lr
 .endfunc
 

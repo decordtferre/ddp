@@ -12,9 +12,9 @@
 // extern void warmup();
 
 // Uncomment for Session SW2 onwards
-//#include "mp_arith.h"
-//#include "montgomery.h"
-//#include "asm_func.h"
+#include "mp_arith.h"
+#include "montgomery.h"
+#include "asm_func.h"
 
 
 int main()

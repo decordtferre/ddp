@@ -1,27 +1,27 @@
-!SESSION 2026-09-30 14:05:22.606 -----------------------------------------------
+!SESSION 2026-10-14 14:09:17.887 -----------------------------------------------
 eclipse.buildId=2023.1
 java.version=11.0.16.1
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
-Framework arguments:  -application com.xilinx.sdx.cmdline.service 34375
-Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 34375 -data /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw
+Framework arguments:  -application com.xilinx.sdx.cmdline.service 36195
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 36195 -data /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw
 
-!ENTRY org.eclipse.osgi 4 0 2026-09-30 14:05:23.009
+!ENTRY org.eclipse.osgi 4 0 2026-10-14 14:09:18.174
 !MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
 
-!ENTRY org.eclipse.osgi 4 0 2026-09-30 14:05:23.144
+!ENTRY org.eclipse.osgi 4 0 2026-10-14 14:09:18.284
 !MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.842
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.862
 !MESSAGE XSCT Command: [::hsi::utils::openhw src/tcl/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.845
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.865
 !MESSAGE XSCT command with result: [::hsi::utils::openhw src/tcl/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.849
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.868
 !MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json src/tcl/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.855
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.875
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json src/tcl/ecc_project_wrapper.xsa], Result: [null, {"Interface_Cell_ARCACHE": {"hier_name": "Interface_Cell_ARCACHE",
 "type": "xlconstant",
 "version": "1.1",
@@ -274,22 +274,22 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.862
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.881
 !MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.881
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.889
 !MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.882
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.890
 !MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.883
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.892
 !MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /esat/micas-data/software/Xilinx/vitis_2023.1/Vitis/2023.1/data]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.887
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.895
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json src/tcl/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.896
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.901
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json src/tcl/ecc_project_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
 "version": "1.13",
 "desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.5.1",
@@ -322,10 +322,10 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.902
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.907
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.910
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:19.915
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"versal_psmfw": {"userdefname": "versal PSM Firmware",
 "description": "Processing System Management Unit Firmware for versal.",
 "supp_proc": "psu_psm psv_psm psxl_psm psx_psm",
@@ -656,76 +656,76 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:27.995
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:20.066
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw src/tcl/ecc_project_wrapper.xsa -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:28.014
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:20.084
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw src/tcl/ecc_project_wrapper.xsa -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:28.024
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:20.092
 !MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode batch], Thread: Thread-20
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:28.025
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:20.093
 !MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode batch], Result: [null, ]. Thread: Thread-20
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:28.327
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:20.327
 !MESSAGE XSCT Command: [platform create -name {ecc_project_wrapper} -hw {src/tcl/ecc_project_wrapper.xsa} -out {/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw};platform write], Thread: Thread-11
 
-!ENTRY org.eclipse.cdt.core 1 0 2026-09-30 14:05:28.485
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-14 14:09:20.467
 !MESSAGE Indexed 'ecc_project_wrapper' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:35.264
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:27.120
 !MESSAGE XSCT command with result: [platform create -name {ecc_project_wrapper} -hw {src/tcl/ecc_project_wrapper.xsa} -out {/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw};platform write], Result: [null, Successfully saved  the platform at "/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/platform.spr"]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:35.314
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:27.170
 !MESSAGE XSCT Command: [domain create -name {standalone_domain} -display-name {standalone on ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.123
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:28.923
 !MESSAGE XSCT command with result: [domain create -name {standalone_domain} -display-name {standalone on ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.125
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:28.925
 !MESSAGE XSCT Command: [platform write], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.177
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:28.983
 !MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/platform.spr"]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.197
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.005
 !MESSAGE XSCT Command: [platform active {ecc_project_wrapper}], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.199
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.006
 !MESSAGE XSCT command with result: [platform active {ecc_project_wrapper}], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.200
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.007
 !MESSAGE XSCT Command: [domain active {zynq_fsbl}], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.201
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.009
 !MESSAGE XSCT command with result: [domain active {zynq_fsbl}], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.202
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.010
 !MESSAGE XSCT Command: [domain active {standalone_domain}], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.203
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.011
 !MESSAGE XSCT command with result: [domain active {standalone_domain}], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.204
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.012
 !MESSAGE XSCT Command: [platform generate -quick], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.313
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.133
 !MESSAGE XSCT command with result: [platform generate -quick], Result: [null, Successfully generated platform at "/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw"]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:37.994
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:29.740
 !MESSAGE XSCT Command: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY org.eclipse.cdt.core 1 0 2026-09-30 14:05:38.619
-!MESSAGE Indexed 'sw_design_system' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-14 14:09:30.441
+!MESSAGE Indexed 'sw_design_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.146
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:30.885
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.147
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:30.886
 !MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.153
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:30.892
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, {"Interface_Cell_ARCACHE": {"hier_name": "Interface_Cell_ARCACHE",
 "type": "xlconstant",
 "version": "1.1",
@@ -978,25 +978,25 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.173
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:30.909
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss ], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.175
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:30.912
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss ], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.176
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:30.913
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.178
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:30.915
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "8.1",
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.836
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.618
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.841
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.623
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
 "version": "1.13",
 "desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.5.1",
@@ -1029,28 +1029,28 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.842
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.624
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.844
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.626
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.845
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.627
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.847
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.628
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Result: [null, {}]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.847
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.629
 !MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.849
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.630
 !MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Result: [null, Interface_Cell_axi_dma_0 Interface_Cell_command_interface_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_0 ps7_usb_0 ps7_xadc_0]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.850
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.631
 !MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.855
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.635
 !MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Result: [null, {"Interface_Cell_axi_dma_0": {"name": "axidma",
 "ver": "9.16",
 },
@@ -1161,10 +1161,10 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.856
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.636
 !MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.917
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.697
 !MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, {"Interface_Cell_ARCACHE": {"version": "1.1",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
@@ -1625,46 +1625,46 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.920
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.700
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.921
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.701
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.922
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.702
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.923
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.704
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Result: [null, {}]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.948
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.721
 !MESSAGE XSCT Command: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.950
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.723
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.951
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.724
 !MESSAGE XSCT Command: [::hsi::utils::opensw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.952
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.725
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:39.953
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.726
 !MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss -app hello_world -processor ps7_cortexa9_0 -os standalone -dir /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/src], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:40.000
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.772
 !MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss -app hello_world -processor ps7_cortexa9_0 -os standalone -dir /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/src], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:40.057
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.819
 !MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream}], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:40.107
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.869
 !MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream}], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:40.110
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.872
 !MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:40.112
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.875
 !MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, {"device": "7z020",
 "family": "zynq",
 "timestamp": "Thu Sep 22 17:35:59 2022",
@@ -1672,121 +1672,121 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "part": "xc7z020clg400-1",
 }]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:40.113
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:31.878
 !MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit} -quiet], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:43.093
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:34.693
 !MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit} -quiet], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:43.193
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:34.803
 !MESSAGE XSCT Command: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:43.195
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:34.805
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/system.mss], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-30 14:05:43.213
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-14 14:09:34.825
 !MESSAGE Generating MD5 hash for file: /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ...
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:57.883
-!MESSAGE XSCT Command: [::hsi::utils::closehw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:49.682
+!MESSAGE XSCT Command: [::hsi::utils::closehw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:57.902
-!MESSAGE XSCT command with result: [::hsi::utils::closehw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:49.701
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:57.903
-!MESSAGE XSCT Command: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:49.702
+!MESSAGE XSCT Command: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:59.061
-!MESSAGE XSCT command with result: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:50.882
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:59.062
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ], Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:50.884
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:59.065
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:50.886
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:59.066
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:50.887
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:59.068
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:50.889
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "8.1",
-}]. Thread: Worker-5: Building selected projects in workspace
+}]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-30 14:05:59.068
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-14 14:09:50.890
 !MESSAGE Generating MD5 hash for file: /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ...
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:59.071
-!MESSAGE XSCT Command: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:50.891
+!MESSAGE XSCT Command: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:05:59.072
-!MESSAGE XSCT command with result: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-5: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:09:50.892
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
 
-!ENTRY org.eclipse.cdt.core 1 0 2026-09-30 14:06:00.146
-!MESSAGE Indexed 'sw_design' (2 sources, 50 headers) in 0.076 sec: 1,451 declarations; 2,181 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-14 14:09:52.058
+!MESSAGE Indexed 'sw_design' (2 sources, 50 headers) in 0.095 sec: 1,451 declarations; 2,181 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY org.eclipse.core.resources 2 10035 2026-09-30 14:06:00.272
+!ENTRY org.eclipse.core.resources 2 10035 2026-10-14 14:09:52.158
 !MESSAGE The workspace will exit with unsaved changes in this session.
-!SESSION 2026-09-30 14:06:12.874 -----------------------------------------------
+!SESSION 2026-10-14 14:10:34.122 -----------------------------------------------
 eclipse.buildId=2023.1
 java.version=11.0.16.1
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -data ./project_sw
 
-!ENTRY org.eclipse.osgi 4 0 2026-09-30 14:06:13.235
+!ENTRY org.eclipse.osgi 4 0 2026-10-14 14:10:34.434
 !MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
 
-!ENTRY org.eclipse.osgi 4 0 2026-09-30 14:06:13.257
+!ENTRY org.eclipse.osgi 4 0 2026-10-14 14:10:34.454
 !MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
 
-!ENTRY org.eclipse.core.resources 2 10035 2026-09-30 14:06:13.869
+!ENTRY org.eclipse.core.resources 2 10035 2026-10-14 14:10:35.047
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:18.091
-!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:18.092
-!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:18.094
-!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:18.095
-!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:18.095
-!MESSAGE XSCT Command: [setws /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw], Thread: Thread-18
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:18.097
-!MESSAGE XSCT command with result: [setws /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw], Result: [null, ]. Thread: Thread-18
-
-!ENTRY org.eclipse.ui 4 4 2026-09-30 14:06:18.102
+!ENTRY org.eclipse.ui 4 4 2026-10-14 14:10:38.247
 !MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
 
-!ENTRY org.eclipse.launchbar.core 2 0 2026-09-30 14:06:19.111
+!ENTRY org.eclipse.launchbar.core 2 0 2026-10-14 14:10:39.045
 !MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2026-09-30 14:06:19.112
+!ENTRY org.eclipse.launchbar.core 2 0 2026-10-14 14:10:39.046
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2026-09-30 14:06:19.112
+!ENTRY org.eclipse.launchbar.core 2 0 2026-10-14 14:10:39.046
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:38.429
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:39.742
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:39.743
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:39.749
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:39.751
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:39.754
+!MESSAGE XSCT Command: [setws /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:39.758
+!MESSAGE XSCT command with result: [setws /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:41.150
 !MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:39.091
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:41.438
 !MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:39.092
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:41.439
 !MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:06:39.093
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 14:10:41.440
 !MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /esat/micas-data/software/Xilinx/vitis_2023.1/Vitis/2023.1/data]. Thread: Worker-3: Initializing s/w repositories
 
-!ENTRY org.eclipse.e4.ui.workbench 4 0 2026-09-30 14:08:38.501
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2026-10-14 15:17:43.251
 !MESSAGE 
 !STACK 0
 java.lang.NullPointerException
@@ -1872,40 +1872,40 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:07.876
-!MESSAGE XSCT Command: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-1: Building Workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:04.865
+!MESSAGE XSCT Command: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:09.041
-!MESSAGE XSCT command with result: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Worker-1: Building Workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:06.009
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, ]. Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:09.047
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ], Thread: Worker-1: Building Workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:06.016
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ], Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:09.050
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-1: Building Workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:06.018
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:09.050
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Thread: Worker-1: Building Workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:06.020
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:09.052
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:06.021
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "8.1",
-}]. Thread: Worker-1: Building Workspace
+}]. Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-30 14:10:09.053
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-14 15:18:06.022
 !MESSAGE Generating MD5 hash for file: /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss ...
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:09.057
-!MESSAGE XSCT Command: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Thread: Worker-1: Building Workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:06.027
+!MESSAGE XSCT Command: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:09.058
-!MESSAGE XSCT command with result: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-1: Building Workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:06.028
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/sw/ecc_project_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:10.116
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-1: Building Workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:07.119
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:10:10.122
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:18:07.125
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, {"Interface_Cell_ARCACHE": {"hier_name": "Interface_Cell_ARCACHE",
 "type": "xlconstant",
 "version": "1.1",
@@ -2156,26 +2156,26 @@ java.lang.NullPointerException
 "version": "1.00.a",
 "ip_type": "PERIPHERAL",
 },
-}]. Thread: Worker-1: Building Workspace
+}]. Thread: Worker-11: Build Project
 
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-30 14:10:16.131
+!ENTRY com.xilinx.sdk.utils 1 0 2026-10-14 15:18:13.091
 !MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.148
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.256
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.150
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.258
 !MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, {"device": "7z020",
 "family": "zynq",
 "timestamp": "Thu Sep 22 17:35:59 2022",
 "vivado_version": "2021.2",
 "part": "xc7z020clg400-1",
-}]. Thread: main
+}]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.259
-!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.326
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.262
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.330
 !MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "650",
 "PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
 "PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
@@ -2188,12 +2188,12 @@ java.lang.NullPointerException
 "PCW_FPGA0_PERIPHERAL_FREQMHZ": "100",
 "PCW_UIPARAM_DDR_BUS_WIDTH": "16 Bit",
 "PCW_UIPARAM_DDR_FREQ_MHZ": "525",
-}]. Thread: Worker-9: Launching Debugger_sw_design-Default
+}]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.263
-!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.331
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.277
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.343
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Result: [null, {"Interface_Cell_axi_dma_0": {"MM2S_DMACR": {"description": "MM2S DMA Control Register",
 "address_offset": "0x0",
 "access": "read-write",
@@ -2979,12 +2979,12 @@ Note: This value must be greater than or equal to the largest expected packet to
 "ps7_uart_0": {},
 "ps7_usb_0": {},
 "ps7_xadc_0": {},
-}]. Thread: Worker-9: Launching Debugger_sw_design-Default
+}]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.285
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.364
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.295
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.376
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Result: [null, {"Interface_Cell_axi_dma_0_S_AXI_LITE": {"name": "Interface_Cell_axi_dma_0",
 "base": "0x40400000",
 "high": "0x4040FFFF",
@@ -3370,60 +3370,60 @@ Note: This value must be greater than or equal to the largest expected packet to
 "acctype": "",
 "tz": "",
 },
-}]. Thread: Worker-9: Launching Debugger_sw_design-Default
+}]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.297
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.379
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.299
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.381
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.299
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.382
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.300
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.384
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.301
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.384
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.302
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.386
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.302
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.386
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.303
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.388
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.304
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.388
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.304
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.390
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.305
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.391
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.306
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.392
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.306
-!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.392
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.308
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.394
 !MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
 "index": "0",
 },
 "ps7_cortexa9_1": {"bscan": "",
 "index": "1",
 },
-}]. Thread: Worker-9: Launching Debugger_sw_design-Default
+}]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.309
-!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.395
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.320
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.408
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1], Result: [null, {"Interface_Cell_axi_dma_0": {"MM2S_DMACR": {"description": "MM2S DMA Control Register",
 "address_offset": "0x0",
 "access": "read-write",
@@ -4209,12 +4209,12 @@ Note: This value must be greater than or equal to the largest expected packet to
 "ps7_uart_0": {},
 "ps7_usb_0": {},
 "ps7_xadc_0": {},
-}]. Thread: Worker-9: Launching Debugger_sw_design-Default
+}]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.324
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.413
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.330
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.419
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1], Result: [null, {"Interface_Cell_axi_dma_0_S_AXI_LITE": {"name": "Interface_Cell_axi_dma_0",
 "base": "0x40400000",
 "high": "0x4040FFFF",
@@ -4600,60 +4600,60 @@ Note: This value must be greater than or equal to the largest expected packet to
 "acctype": "",
 "tz": "",
 },
-}]. Thread: Worker-9: Launching Debugger_sw_design-Default
+}]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.331
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.420
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.332
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.421
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.333
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.422
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.334
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.424
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.334
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.424
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.335
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.426
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.336
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.427
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.337
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.428
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.337
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.429
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.338
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.431
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.339
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.432
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.340
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.433
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.341
-!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.435
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.342
-!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Result: [null, Interface_Cell_axi_dma_0 Interface_Cell_command_interface_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_0 ps7_usb_0 ps7_xadc_0]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.436
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa ps7_cortexa9_0], Result: [null, Interface_Cell_axi_dma_0 Interface_Cell_command_interface_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_0 ps7_usb_0 ps7_xadc_0]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.343
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa bit], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.438
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa bit], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.344
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa bit], Result: [null, rsa_project_wrapper.bit]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.439
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa bit], Result: [null, rsa_project_wrapper.bit]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.346
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.441
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY org.eclipse.tcf 4 0 2026-09-30 14:13:50.562
+!ENTRY org.eclipse.tcf 4 0 2026-10-14 15:19:41.704
 !MESSAGE Invalid peerAdded event
 !STACK 0
 java.lang.Error
@@ -4663,7 +4663,7 @@ java.lang.Error
 	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-!ENTRY org.eclipse.tcf 4 0 2026-09-30 14:13:50.563
+!ENTRY org.eclipse.tcf 4 0 2026-10-14 15:19:41.705
 !MESSAGE Invalid peerAdded event
 !STACK 0
 java.lang.Error
@@ -4673,1028 +4673,264 @@ java.lang.Error
 	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.564
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.715
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.567
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:41.717
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.751
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:44.821
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.752
-!MESSAGE XSCT Command: [version -server], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:47.823
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.753
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:50.317
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.753
-!MESSAGE XSCT Command: [version], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:50.833
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.754
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:50.834
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-23: Launching SystemDebugger_sw_design_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:50.835
+!MESSAGE XSCT Command: [version -server], Thread: Worker-22: Launching SystemDebugger_sw_design_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:50.836
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching SystemDebugger_sw_design_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:50.837
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:50.838
+!MESSAGE XSCT Command: [version], Thread: Worker-22: Launching SystemDebugger_sw_design_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:53.840
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-23: Launching SystemDebugger_sw_design_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:53.841
 !MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.1.0
 SW Build 0 on 2023-05-03-16:48:11
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-9: Launching Debugger_sw_design-Default
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.756
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:53.844
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.759
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:55.033
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.760
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:56.841
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.767
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:56.847
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.770
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:56.848
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.775
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:56.849
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.776
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:59.848
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.787
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:59.849
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.788
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:19:59.850
+!MESSAGE XSCT Command: [version -server], Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.793
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:01.363
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.793
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:02.851
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.803
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:05.853
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.805
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:05.853
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.808
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:05.854
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.808
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:05.855
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.815
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:05.856
+!MESSAGE XSCT Command: [version], Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.816
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:05.857
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.818
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-9: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:08.859
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.819
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.826
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.827
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.830
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.830
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.837
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.837
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.844
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.845
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.846
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.847
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.852
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.852
-!MESSAGE XSCT Command: [rst -system], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.894
-!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:50.895
-!MESSAGE XSCT Command: [after 3000], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.899
-!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.912
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.915
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.916
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.923
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.925
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.926
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.927
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.930
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.930
-!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
-foreach t [jtag ta -ta] {
-if {[dict get $t node_id] == $node_id} {
-return [dict get $t target_ctx]
-}
-}
-error cannot find a jtag device with node id $node_id}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.931
-!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
-foreach t [jtag ta -ta] {
-if {[dict get $t node_id] == $node_id} {
-return [dict get $t target_ctx]
-}
-}
-error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.932
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.935
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.935
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.942
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.943
-!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.944
-!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-TUL-1234-tulA-4ba00477-0]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.945
-!MESSAGE XSCT Command: [fetch_device_jtag_ctx 3], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.946
-!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 3], Result: [null, jsn-TUL-1234-tulA-23727093-0]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.949
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.970
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:53.971
-!MESSAGE XSCT Command: [fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.297
-!MESSAGE XSCT command with result: [fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.315
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.324
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.325
-!MESSAGE XSCT Command: [loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.368
-!MESSAGE XSCT command with result: [loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, rsa_project_wrapper_0]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.369
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.370
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.371
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.375
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.375
-!MESSAGE XSCT Command: [source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.376
-!MESSAGE XSCT command with result: [source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.377
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.591
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.592
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.595
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.595
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.601
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.602
-!MESSAGE XSCT Command: [dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.774
-!MESSAGE XSCT command with result: [dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.774
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.803
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.844
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.854
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.855
-!MESSAGE XSCT Command: [con], Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:13:56.868
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-30 14:13:56.872
-!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
-
-!ENTRY org.eclipse.cdt.core 4 0 2026-09-30 14:18:35.658
-!MESSAGE Error: Not ELF format
-!STACK 0
-java.io.IOException: Not ELF format
-	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:188)
-	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:666)
-	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:684)
-	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:929)
-	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:60)
-	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:34)
-	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:110)
-	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:278)
-	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:52)
-	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:33)
-	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
-	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
-	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
-	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:458)
-	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:167)
-	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:101)
-	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
-	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:423)
-	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
-	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:452)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
-	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
-
-!ENTRY org.eclipse.cdt.core 4 0 2026-09-30 14:18:35.660
-!MESSAGE Error: Not ELF format
-!STACK 0
-java.io.IOException: Not ELF format
-	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:188)
-	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:666)
-	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:684)
-	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:929)
-	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:60)
-	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:34)
-	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:120)
-	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:278)
-	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:52)
-	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:33)
-	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
-	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
-	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
-	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:458)
-	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:167)
-	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:101)
-	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
-	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:423)
-	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
-	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:452)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
-	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:36.946
-!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-333
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:36.955
-!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-333
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.959
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.965
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.966
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.980
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.980
-!MESSAGE XSCT Command: [version -server], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.982
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.982
-!MESSAGE XSCT Command: [version], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.983
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:08.860
 !MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.1.0
 SW Build 0 on 2023-05-03-16:48:11
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-7: Launching Debugger_sw_design-Default
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.984
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:08.861
+!MESSAGE XSCT Command: [version -server], Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.990
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:08.862
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.990
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:11.861
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.998
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:11.862
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:37.999
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:11.863
+!MESSAGE XSCT Command: [version], Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.001
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:14.863
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.002
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:14.864
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.009
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:14.865
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.1.0
+SW Build 0 on 2023-05-03-16:48:11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.010
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:14.866
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.013
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.013
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.021
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.021
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.024
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.024
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.031
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.032
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.035
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.035
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.042
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.043
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.046
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.046
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.053
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.054
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.061
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.062
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.063
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.064
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.070
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.070
-!MESSAGE XSCT Command: [rst -system], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.114
-!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:38.115
-!MESSAGE XSCT Command: [after 3000], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY org.eclipse.cdt.core 4 0 2026-09-30 14:18:40.888
-!MESSAGE Error: Not ELF format
+!ENTRY org.eclipse.tcf 4 0 2026-10-14 15:20:16.373
+!MESSAGE Invalid peerAdded event
 !STACK 0
-java.io.IOException: Not ELF format
-	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:188)
-	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:666)
-	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:684)
-	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:929)
-	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:60)
-	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:34)
-	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:110)
-	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:278)
-	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:52)
-	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:33)
-	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
-	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
-	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
-	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:458)
-	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:167)
-	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:101)
-	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
-	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:423)
-	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
-	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:452)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
-	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
-
-!ENTRY org.eclipse.cdt.core 4 0 2026-09-30 14:18:40.889
-!MESSAGE Error: Not ELF format
-!STACK 0
-java.io.IOException: Not ELF format
-	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:188)
-	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:666)
-	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:684)
-	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:929)
-	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:60)
-	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:34)
-	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:120)
-	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:278)
-	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:52)
-	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:33)
-	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
-	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
-	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
-	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
-	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
-	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:458)
-	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:167)
-	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:101)
-	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
-	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:423)
-	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
-	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:452)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
-	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:41.119
-!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:41.127
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:41.131
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:41.132
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:41.139
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:41.140
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:41.154
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:41.155
-!MESSAGE XSCT Command: [fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.471
-!MESSAGE XSCT command with result: [fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.485
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.490
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.491
-!MESSAGE XSCT Command: [loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.498
-!MESSAGE XSCT command with result: [loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, rsa_project_wrapper_0]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.498
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.499
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.500
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.504
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.505
-!MESSAGE XSCT Command: [source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.506
-!MESSAGE XSCT command with result: [source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.506
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.689
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.690
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.698
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.699
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.711
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.712
-!MESSAGE XSCT Command: [dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.894
-!MESSAGE XSCT command with result: [dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.895
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.914
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
-
-!ENTRY org.eclipse.tcf.debug.ui 4 0 2026-09-30 14:18:43.924
-!MESSAGE Unhandled exception in TCF UI
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.tcf.internal.cdt.ui.TCFBreakpointActions$RunControlListener.<init>(TCFBreakpointActions.java:219)
-	at org.eclipse.tcf.internal.cdt.ui.TCFBreakpointActions$1.onConnected(TCFBreakpointActions.java:282)
-	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onConnected(TCFModelManager.java:65)
-	at org.eclipse.tcf.internal.debug.model.TCFLaunch$15.start(TCFLaunch.java:512)
-	at org.eclipse.tcf.internal.debug.model.TCFLaunch$LaunchStep.done(TCFLaunch.java:124)
-	at org.eclipse.tcf.internal.debug.model.TCFLaunch$LaunchStep.run(TCFLaunch.java:132)
-	at org.eclipse.tcf.internal.debug.model.TCFLaunch.runLaunchSequence(TCFLaunch.java:557)
-	at com.xilinx.sdk.tcf.debug.BaseTcfLaunch.done(BaseTcfLaunch.java:151)
-	at com.xilinx.sdk.tcf.debug.BaseTcfLaunch.runLaunchSequence(BaseTcfLaunch.java:64)
-	at org.eclipse.tcf.internal.debug.model.TCFLaunch$14.start(TCFLaunch.java:498)
-	at org.eclipse.tcf.internal.debug.model.TCFLaunch$LaunchStep.done(TCFLaunch.java:124)
-	at org.eclipse.tcf.internal.debug.model.TCFLaunch$8$1.doneSubscribe(TCFLaunch.java:402)
-	at org.eclipse.tcf.internal.services.remote.StreamsProxy$5.done(StreamsProxy.java:135)
-	at org.eclipse.tcf.core.Command.result(Command.java:122)
-	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1128)
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
 	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
 	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.925
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY org.eclipse.tcf 4 0 2026-10-14 15:20:16.374
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.935
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY org.eclipse.tcf 4 0 2026-10-14 15:20:16.375
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.936
-!MESSAGE XSCT Command: [con], Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY org.eclipse.tcf 4 0 2026-10-14 15:20:16.376
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:43.954
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-7: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:17.865
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-30 14:18:43.956
-!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:17.868
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.488
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:17.869
+!MESSAGE XSCT Command: [version -server], Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.491
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:20.871
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.492
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:23.872
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.495
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:23.873
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-23: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.496
-!MESSAGE XSCT Command: [version -server], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:23.874
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.498
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:23.875
+!MESSAGE XSCT Command: [version], Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.499
-!MESSAGE XSCT Command: [version], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:26.689
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.500
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:26.879
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-20: Launching SystemDebugger_sw_design_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:26.880
 !MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.1.0
 SW Build 0 on 2023-05-03-16:48:11
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-0: Launching Debugger_sw_design-Default
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.501
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:26.881
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.508
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:26.882
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.509
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:26.882
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.525
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:29.887
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.526
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:32.889
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.531
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:32.890
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.532
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:35.891
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.540
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:35.892
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-19: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.540
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:38.895
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.543
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:38.896
+!MESSAGE XSCT Command: [version -server], Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.544
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:38.897
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.551
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:38.898
+!MESSAGE XSCT Command: [version], Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.551
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:38.899
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.1.0
+SW Build 0 on 2023-05-03-16:48:11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.554
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:38.900
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.555
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:41.906
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.562
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_sw_design-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:44.908
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching SystemDebugger_sw_design_system
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.562
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.565
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.566
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.573
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.573
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.576
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.577
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.584
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.585
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.592
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.593
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.593
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.594
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.599
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.599
-!MESSAGE XSCT Command: [rst -system], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.640
-!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:44.641
-!MESSAGE XSCT Command: [after 3000], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:47.646
-!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:47.665
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:47.670
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:47.670
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:47.677
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:47.678
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:47.693
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:47.693
-!MESSAGE XSCT Command: [fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.009
-!MESSAGE XSCT command with result: [fpga -file /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/bitstream/rsa_project_wrapper.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.026
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.031
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.032
-!MESSAGE XSCT Command: [loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.034
-!MESSAGE XSCT command with result: [loadhw -hw /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/ecc_project_wrapper/export/ecc_project_wrapper/hw/ecc_project_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, rsa_project_wrapper_0]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.035
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.036
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.037
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.041
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.042
-!MESSAGE XSCT Command: [source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.043
-!MESSAGE XSCT command with result: [source /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.044
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.209
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.210
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.213
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.213
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.218
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.218
-!MESSAGE XSCT Command: [dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.363
-!MESSAGE XSCT command with result: [dow /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug/sw_design.elf], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.365
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.384
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.395
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.402
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.402
-!MESSAGE XSCT Command: [con], Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-30 14:18:50.413
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-0: Launching Debugger_sw_design-Default
-
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-30 14:18:50.415
-!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+!ENTRY com.xilinx.sdk.utils 0 0 2026-10-14 15:20:47.918
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-24: Launching SystemDebugger_sw_design_system

@@ -1,4 +1,4 @@
-14:10:09 **** Build of configuration Debug for project sw_design ****
+15:18:06 **** Build of configuration Debug for project sw_design ****
 make all 
 make[1]: Entering directory '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug'
 make --no-print-directory pre-build
@@ -77,10 +77,10 @@ Finished building target: sw_design.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size sw_design.elf  |tee "sw_design.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  56199	   2552	  22648	  81399	  13df7	sw_design.elf
+  62687	   3068	  22648	  88403	  15953	sw_design.elf
 Finished building: sw_design.elf.size
  
 make[1]: Leaving directory '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design/Debug'
 
-14:10:09 Build Finished (took 714ms)
+15:18:06 Build Finished (took 763ms)
 

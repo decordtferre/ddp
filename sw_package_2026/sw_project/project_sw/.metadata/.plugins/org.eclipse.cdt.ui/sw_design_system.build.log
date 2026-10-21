@@ -1,4 +1,4 @@
-14:10:10 **** Build of configuration Debug for project sw_design_system ****
+15:18:07 **** Build of configuration Debug for project sw_design_system ****
 make all 
 make[1]: Entering directory '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/Debug'
 Generating bif file for the system project
@@ -8,5 +8,5 @@ creating BOOT.BIN using /users/students/r0885482/Documents/DDP/sw_package_2026/s
 Running /esat/micas-data/software/Xilinx/vitis_2023.1/Vitis/2023.1/bin/bootgen  -image /users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 make[1]: Leaving directory '/users/students/r0885482/Documents/DDP/sw_package_2026/sw_project/project_sw/sw_design_system/Debug'
 
-14:10:16 Build Finished (took 5s.976ms)
+15:18:13 Build Finished (took 5s.930ms)
 

@@ -115,6 +115,8 @@ multiply:
 
 .text
 
+// Optimised functions
+
 .global mul_add_row
 .func mul_add_row, mul_add_row
 .type mul_add_row, %function

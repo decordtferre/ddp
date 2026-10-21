@@ -130,8 +130,12 @@ mont_inner_loop1:
 .type mont_row_mac, %function
 
 mont_row_mac:
-    // r0 = &t[i], r1 = a, r2 = b[i], r3 = count (>= 1, = size - i)
-    // t[i+j] = low(t[i+j] + a[j]*b[i] + C), then {t[size+1], t[size]} += C
+    // r0 = &t[i], r1 = a, r2 = b[i], r3 = count; returns carry out in r0
+    // t[j] = low(t[j] + a[j]*b[i] + C), C = high(...)
+    CMP     r3, #0
+    MOVEQ   r0, #0
+    BXEQ    lr
+
     PUSH    {r4-r5}
     MOV     r12, #0             // carry
 
@@ -143,119 +147,11 @@ mont_row_mac:
     SUBS    r3, r3, #1
     BNE     .Lrowloop
 
-    // r0 = &t[size]
-    LDR     r4, [r0]
-    LDR     r5, [r0, #4]
-    ADDS    r4, r4, r12
-    ADC     r5, r5, #0
-    STR     r4, [r0]
-    STR     r5, [r0, #4]
+    MOV     r0, r12
     POP     {r4-r5}
     BX      lr
 
     .size mont_row_mac, .-mont_row_mac
-.endfunc
-
-.global mont_reduce_step
-.func mont_reduce_step, mont_reduce_step
-.type mont_reduce_step, %function
-
-mont_reduce_step:
-    // r0 = t, r1 = n, r2 = n'[0], r3 = size (>= 1)
-    // m = t[0]*n'[0]; t = (t + m*n) / 2^32 (shift down by one limb)
-    PUSH    {r4-r8}
-    LDR     r8, [r0]            // t[0]
-    MUL     r5, r8, r2          // m
-    LDR     r6, [r1], #4        // n[0]
-    MOV     r7, #0
-    UMAAL   r8, r7, r5, r6      // r7 = carry out of t[0] + m*n[0]
-    ADD     r4, r0, #4          // t read pointer
-    SUBS    r3, r3, #1
-    BEQ     .Lreduce_tail
-
-.Lreduce_loop:
-    LDR     r6, [r1], #4
-    LDR     r8, [r4], #4
-    UMAAL   r8, r7, r5, r6
-    STR     r8, [r0], #4
-    SUBS    r3, r3, #1
-    BNE     .Lreduce_loop
-
-.Lreduce_tail:
-    // r0 = &t[size-1], r4 = &t[size]
-    LDR     r8, [r4]
-    LDR     r6, [r4, #4]
-    ADDS    r8, r8, r7
-    ADC     r6, r6, #0
-    STR     r8, [r0]            // t[size-1]
-    STR     r6, [r4]            // t[size]
-    MOV     r8, #0
-    STR     r8, [r4, #4]        // t[size+1] = 0
-    POP     {r4-r8}
-    BX      lr
-
-    .size mont_reduce_step, .-mont_reduce_step
-.endfunc
-
-.global mont_sub_cond
-.func mont_sub_cond, mont_sub_cond
-.type mont_sub_cond, %function
-
-mont_sub_cond:
-    // r0 = t (size+1 words), r1 = n (size words), r2 = res (size+1 words), r3 = size (>= 1)
-    // res = (t >= n) ? t - n : t
-    PUSH    {r4-r6}
-    MOV     r12, r0             // t base
-    MOV     r6, r2              // res base
-    SUBS    r4, r3, r3          // sets carry (no borrow)
-
-.Lsub_loop:
-    LDR     r4, [r0], #4
-    LDR     r5, [r1], #4
-    SBCS    r4, r4, r5
-    STR     r4, [r2], #4
-    SUB     r3, r3, #1          // plain SUB and TEQ #0 leave the carry flag intact
-    TEQ     r3, #0
-    BNE     .Lsub_loop
-
-    LDR     r4, [r0]            // t[size]
-    SBCS    r4, r4, #0
-    STRCS   r4, [r2]            // t >= n: res[size] = t[size] - borrow
-    BCS     .Lsub_done
-
-    // t < n: res = t (size+1 words); r0 = &t[size]
-    SUB     r5, r0, r12
-    MOV     r5, r5, LSR #2
-    ADD     r5, r5, #1
-    MOV     r0, r12
-    MOV     r2, r6
-.Lsub_copy:
-    LDR     r4, [r0], #4
-    STR     r4, [r2], #4
-    SUBS    r5, r5, #1
-    BNE     .Lsub_copy
-
-.Lsub_done:
-    POP     {r4-r6}
-    BX      lr
-
-    .size mont_sub_cond, .-mont_sub_cond
-.endfunc
-
-.global mont_zero
-.func mont_zero, mont_zero
-.type mont_zero, %function
-
-mont_zero:
-    // r0 = ptr, r1 = word count (>= 1)
-    MOV     r2, #0
-.Lzero_loop:
-    STR     r2, [r0], #4
-    SUBS    r1, r1, #1
-    BNE     .Lzero_loop
-    BX      lr
-
-    .size mont_zero, .-mont_zero
 .endfunc
 
 .global mont_inner_loop2

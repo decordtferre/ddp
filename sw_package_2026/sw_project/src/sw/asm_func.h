@@ -28,17 +28,8 @@ void multiply(uint32_t i, uint32_t *t, uint32_t *a, uint32_t *b, uint32_t *m, ui
 
 extern uint32_t mont_inner_loop1(uint32_t *t, const uint32_t *n, uint32_t m, uint32_t C, int size);
 
-// t[i+j] += a[j]*bi (with carry) for j < count (= size-i), then adds the carry into t[size], t[size+1]. t points to &t[i].
-extern void mont_row_mac(uint32_t *t, const uint32_t *a, uint32_t bi, uint32_t count);
-
-// m = t[0]*n_prime0; t = (t + m*n) >> 32 limb, including the t[size], t[size+1] fix-up
-extern void mont_reduce_step(uint32_t *t, const uint32_t *n, uint32_t n_prime0, uint32_t size);
-
-// res = (t >= n) ? t - n : t; t and res have size+1 words, n has size words
-extern void mont_sub_cond(const uint32_t *t, const uint32_t *n, uint32_t *res, uint32_t size);
-
-// Zeroes count words
-extern void mont_zero(uint32_t *p, uint32_t count);
+// Returns the carry out of t[i+j] += a[j]*bi for j < count. t points to &t[i].
+extern uint32_t mont_row_mac(uint32_t *t, const uint32_t *a, uint32_t bi, uint32_t count);
 
 // t points to &t[size-1], b to &b[i+1], a to &a[size-1]; count = size-i-1
 extern void mont_inner_loop2(uint32_t *t, const uint32_t *b, const uint32_t *a, uint32_t count);

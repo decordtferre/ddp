@@ -4,6 +4,7 @@
  */
 
 #include "montgomery.h"
+#include "asm_func.h"
 #include <stdlib.h>
 
 #include "platform/performance.h"
@@ -107,19 +108,43 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t 
 // Optimised ASM version
 void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t *res, uint32_t size)
 {
-	uint32_t t[size + 2];
-	uint32_t i;
-
-	mont_zero(t, size + 2);
+uint32_t *t = calloc(size + 2, sizeof(uint32_t));
+	uint32_t nprime_0 = n_prime[0];
+	uint32_t C;
+	uint64_t sum;
+	uint8_t i;
 
 	for (i = 0; i < size; i++) {
-		mont_row_mac(&t[i], a, b[i], size - i);
+		C = mont_row_mac(&t[i], a, b[i], size - i);
+
+		sum = (uint64_t)t[size] + (uint64_t)C;
+		C = (sum >> 32);
+		t[size] = (uint32_t)sum;
+		t[size + 1] = t[size + 1] + C;
 	}
 
 	for (i = 0; i < size; i++) {
-		mont_reduce_step(t, n, n_prime[0], size);
+
+		uint32_t m = t[0] * nprime_0; // onderste 32 bit selecteren adhv 32 bit type
+		sum = (uint64_t)t[0] + (uint64_t)m*(uint64_t)n[0];
+		C = (sum >> 32);
+		
+		C = mont_inner_loop1(t, n, m, C, size);
+
+		sum = (uint64_t)t[size] + (uint64_t)C;
+		C = (sum >> 32);
+		t[size - 1] = (uint32_t)sum;
+		t[size] = t[size + 1] + C;
+		t[size + 1] = 0;
+
 		mont_inner_loop2(&t[size - 1], &b[i + 1], &a[size - 1], size - i - 1);
+
 	}
 
-	mont_sub_cond(t, n, res, size);
+	sub_cond(t, n, size);
+	for (uint32_t k = 0; k <= size; k++) {
+		res[k] = t[k];
+	}
+
+	free(t);
 }

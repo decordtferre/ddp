@@ -73,6 +73,224 @@ multiply:
 	bx lr
 .endfunc
 
+.global mont_inner_loop1
+.func mont_inner_loop1, mont_inner_loop1
+.type mont_inner_loop1, %function
+
+mont_inner_loop1:
+    // Read the 5th argument (size) off the stack into r12
+    LDR     r12, [sp, #0]
+
+    // If size <= 1, there are 0 iterations; return C directly in r0
+    CMP     r12, #1
+    BLE     .Learly_exit
+
+    // Save callee-saved registers we will use
+    PUSH    {r4-r6, lr}
+
+    // Set loop counter: count = size - 1
+    SUBS    r12, r12, #1
+
+    // Setup pointers:
+    // r0 = write pointer (&t[0])
+    // r4 = read pointer  (&t[1])
+    // r1 = read pointer  (&n[1])
+    ADD     r4, r0, #4
+    ADD     r1, r1, #4
+
+.Lloop:
+    LDR     r5, [r1], #4        // r5 = n[j], advance n read pointer
+    LDR     r6, [r4], #4        // r6 = t[j], advance t read pointer
+
+    // {r3, r6} = r3 (C) + r6 (t[j]) + (r2 (m) * r5 (n[j]))
+    // r6 gets the low 32 bits (new t[j-1])
+    // r3 gets the high 32 bits (new C)
+    UMAAL   r6, r3, r2, r5
+
+    STR     r6, [r0], #4        // t[j-1] = r6, advance t write pointer
+
+    SUBS    r12, r12, #1        // decrement loop counter
+    BNE     .Lloop
+
+    // Put the final carry (r3) into r0 for the return value
+    MOV     r0, r3
+
+    // Restore saved registers and return
+    POP     {r4-r6, pc}
+
+.Learly_exit:
+    MOV     r0, r3              // return initial carry
+    BX      lr
+
+    .size mont_inner_loop1, .-mont_inner_loop1
+.endfunc
+
+.global mont_row_mac
+.func mont_row_mac, mont_row_mac
+.type mont_row_mac, %function
+
+mont_row_mac:
+    // r0 = &t[i], r1 = a, r2 = b[i], r3 = count (>= 1, = size - i)
+    // t[i+j] = low(t[i+j] + a[j]*b[i] + C), then {t[size+1], t[size]} += C
+    PUSH    {r4-r5}
+    MOV     r12, #0             // carry
+
+.Lrowloop:
+    LDR     r4, [r1], #4        // a[j]
+    LDR     r5, [r0]            // t[i+j]
+    UMAAL   r5, r12, r4, r2     // {r12, r5} = a[j]*b[i] + r5 + r12
+    STR     r5, [r0], #4
+    SUBS    r3, r3, #1
+    BNE     .Lrowloop
+
+    // r0 = &t[size]
+    LDR     r4, [r0]
+    LDR     r5, [r0, #4]
+    ADDS    r4, r4, r12
+    ADC     r5, r5, #0
+    STR     r4, [r0]
+    STR     r5, [r0, #4]
+    POP     {r4-r5}
+    BX      lr
+
+    .size mont_row_mac, .-mont_row_mac
+.endfunc
+
+.global mont_reduce_step
+.func mont_reduce_step, mont_reduce_step
+.type mont_reduce_step, %function
+
+mont_reduce_step:
+    // r0 = t, r1 = n, r2 = n'[0], r3 = size (>= 1)
+    // m = t[0]*n'[0]; t = (t + m*n) / 2^32 (shift down by one limb)
+    PUSH    {r4-r8}
+    LDR     r8, [r0]            // t[0]
+    MUL     r5, r8, r2          // m
+    LDR     r6, [r1], #4        // n[0]
+    MOV     r7, #0
+    UMAAL   r8, r7, r5, r6      // r7 = carry out of t[0] + m*n[0]
+    ADD     r4, r0, #4          // t read pointer
+    SUBS    r3, r3, #1
+    BEQ     .Lreduce_tail
+
+.Lreduce_loop:
+    LDR     r6, [r1], #4
+    LDR     r8, [r4], #4
+    UMAAL   r8, r7, r5, r6
+    STR     r8, [r0], #4
+    SUBS    r3, r3, #1
+    BNE     .Lreduce_loop
+
+.Lreduce_tail:
+    // r0 = &t[size-1], r4 = &t[size]
+    LDR     r8, [r4]
+    LDR     r6, [r4, #4]
+    ADDS    r8, r8, r7
+    ADC     r6, r6, #0
+    STR     r8, [r0]            // t[size-1]
+    STR     r6, [r4]            // t[size]
+    MOV     r8, #0
+    STR     r8, [r4, #4]        // t[size+1] = 0
+    POP     {r4-r8}
+    BX      lr
+
+    .size mont_reduce_step, .-mont_reduce_step
+.endfunc
+
+.global mont_sub_cond
+.func mont_sub_cond, mont_sub_cond
+.type mont_sub_cond, %function
+
+mont_sub_cond:
+    // r0 = t (size+1 words), r1 = n (size words), r2 = res (size+1 words), r3 = size (>= 1)
+    // res = (t >= n) ? t - n : t
+    PUSH    {r4-r6}
+    MOV     r12, r0             // t base
+    MOV     r6, r2              // res base
+    SUBS    r4, r3, r3          // sets carry (no borrow)
+
+.Lsub_loop:
+    LDR     r4, [r0], #4
+    LDR     r5, [r1], #4
+    SBCS    r4, r4, r5
+    STR     r4, [r2], #4
+    SUB     r3, r3, #1          // plain SUB and TEQ #0 leave the carry flag intact
+    TEQ     r3, #0
+    BNE     .Lsub_loop
+
+    LDR     r4, [r0]            // t[size]
+    SBCS    r4, r4, #0
+    STRCS   r4, [r2]            // t >= n: res[size] = t[size] - borrow
+    BCS     .Lsub_done
+
+    // t < n: res = t (size+1 words); r0 = &t[size]
+    SUB     r5, r0, r12
+    MOV     r5, r5, LSR #2
+    ADD     r5, r5, #1
+    MOV     r0, r12
+    MOV     r2, r6
+.Lsub_copy:
+    LDR     r4, [r0], #4
+    STR     r4, [r2], #4
+    SUBS    r5, r5, #1
+    BNE     .Lsub_copy
+
+.Lsub_done:
+    POP     {r4-r6}
+    BX      lr
+
+    .size mont_sub_cond, .-mont_sub_cond
+.endfunc
+
+.global mont_zero
+.func mont_zero, mont_zero
+.type mont_zero, %function
+
+mont_zero:
+    // r0 = ptr, r1 = word count (>= 1)
+    MOV     r2, #0
+.Lzero_loop:
+    STR     r2, [r0], #4
+    SUBS    r1, r1, #1
+    BNE     .Lzero_loop
+    BX      lr
+
+    .size mont_zero, .-mont_zero
+.endfunc
+
+.global mont_inner_loop2
+.func mont_inner_loop2, mont_inner_loop2
+.type mont_inner_loop2, %function
+
+mont_inner_loop2:
+    // r0 = &t[size-1], r1 = &b[i+1] (ascending), r2 = &a[size-1] (descending), r3 = count
+    // Accumulates sum(b[j]*a[..]) into the 96-bit value {t[size+1], t[size], t[size-1]}
+    CMP     r3, #0
+    BXLE    lr
+
+    PUSH    {r4-r9}
+    LDR     r4, [r0]            // acc0 = t[size-1]
+    LDR     r5, [r0, #4]        // acc1 = t[size]
+    LDR     r6, [r0, #8]        // acc2 = t[size+1]
+
+.L2loop:
+    LDR     r12, [r1], #4       // b[j]
+    LDR     r9, [r2], #-4       // a[size-j+i]
+    UMULL   r7, r8, r9, r12
+    ADDS    r4, r4, r7
+    ADCS    r5, r5, r8
+    ADC     r6, r6, #0
+    SUBS    r3, r3, #1
+    BNE     .L2loop
+
+    STR     r4, [r0]
+    STR     r5, [r0, #4]
+    STR     r6, [r0, #8]
+    POP     {r4-r9}
+    BX      lr
+
+    .size mont_inner_loop2, .-mont_inner_loop2
+.endfunc
 
 
 

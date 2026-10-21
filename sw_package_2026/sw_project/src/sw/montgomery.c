@@ -4,6 +4,10 @@
  */
 
 #include "montgomery.h"
+#include <stdlib.h>
+
+#include "platform/performance.h"
+#include "xil_printf.h"
 
 /*
  * procedure SUB COND(u, n, SIZE) . Subtract n array from u if u is
@@ -13,7 +17,7 @@
 void sub_cond(uint32_t *u, uint32_t *n, uint32_t size)
 {
 	uint32_t B = 0;
-	uint32_t *t = malloc(size + 1, sizeof(uint32_t));
+	uint32_t *t = malloc((size + 1) * sizeof(uint32_t));
 
 	for (uint8_t i = 0; i < size; i++) {
 		uint64_t diff = (uint64_t)u[i]-n[i]-B;
@@ -43,8 +47,9 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t 
 	uint32_t nprime_0 = n_prime[0];
 	uint32_t C;
 	uint64_t sum;
-	uint8_t i;
-	uint8_t j;
+	uint32_t i;
+	uint32_t j;
+
 
 	for (i = 0; i < size; i++) {
 		C = 0;
@@ -65,7 +70,8 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t 
 		uint32_t m = t[0] * nprime_0; // onderste 32 bit selecteren adhv 32 bit type
 		sum = (uint64_t)t[0] + (uint64_t)m*(uint64_t)n[0];
 		C = (sum >> 32);
-
+		
+		// deze eerst optimaliseren in assembly, grootste bottleneck circa 80000 cycles van de 207000 in totaal
 		for (j = 1; j < size; j++) {
 			sum = (uint64_t)t[j] + (uint64_t)m * (uint64_t)n[j] + (uint64_t)C;
 			C = (sum >> 32);
@@ -98,12 +104,22 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t 
 	free(t);
 }
 
-
-// Calculates res = a * b * r^(-1) mod n.
-// a, b, n, n_prime represent operands of size elements
-// res has (size+1) elements
 // Optimised ASM version
 void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime, uint32_t *res, uint32_t size)
 {
+	uint32_t t[size + 2];
+	uint32_t i;
 
+	mont_zero(t, size + 2);
+
+	for (i = 0; i < size; i++) {
+		mont_row_mac(&t[i], a, b[i], size - i);
+	}
+
+	for (i = 0; i < size; i++) {
+		mont_reduce_step(t, n, n_prime[0], size);
+		mont_inner_loop2(&t[size - 1], &b[i + 1], &a[size - 1], size - i - 1);
+	}
+
+	mont_sub_cond(t, n, res, size);
 }

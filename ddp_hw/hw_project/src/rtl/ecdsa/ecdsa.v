@@ -33,8 +33,9 @@ module ecdsa (
   // Only one output register is used. It will the status of FPGA's execution.
   wire [31:0] status;
   assign rout0 = status; // use rout0 as status
-  assign rout1 = 32'b0;  // not used
-  assign rout2 = 32'b0;  // not used
+  assign rout1 = rin1;   // echo the RX address back to software
+  assign rout2 = rin2;   // echo the TX address back to software
+   
   assign rout3 = 32'b0;  // not used
   assign rout4 = 32'b0;  // not used
   assign rout5 = 32'b0;  // not used
@@ -147,7 +148,7 @@ module ecdsa (
   always@(posedge clk)
     case (state)
       STATE_RX_WAIT : r_data <= (dma_done) ? dma_rx_data : r_data;
-      STATE_COMPUTE : r_data <= {32'h00000000, r_data[991:0]};
+      STATE_COMPUTE : r_data <= {32'hDEADBEEF, r_data[991:0]};
     endcase
   assign dma_tx_data = r_data;
 

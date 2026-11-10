@@ -1,75 +1,47 @@
 #include "common.h"
-#include <stdalign.h>
 #include <string.h>
 
-// Register file shared with FPGA
-static volatile uint32_t* const HWreg = (volatile uint32_t*)0x40400000;
+#include "hw_accel.h"
+#include "ec.h"
 
-// Input registers (SW to HW)
-#define COMMAND 0
-#define RXADDR  1
-#define TXADDR  2
+// These variables are defined in the testvector.c
+// that is created by the testvector generator python script
+extern uint32_t modulus[32],
+                Public_X[32], Public_Y[32], Public_Z[32], Public_T[32],
+                G_X[32],      G_Y[32],      G_Z[32],      G_T[32],
+                R2_N[32];
 
-// Output registers (HW to SW)
-#define STATUS     0
-#define MUL_CYCLES 3
+// Expected results for the testvector with seed = 2026, calculated with
+// EC_addition from testvectors/HW.py. Regenerate them when testvector.c
+// is regenerated with another seed, because the public key changes.
+static const ec_point expected_G_plus_P = {
+  .x = { 0x6540d446, 0x3a90abb6, 0xc531a32d, 0x3f187f0d, 0x22ace6d1, 0x94cb3aa6,
+         0x2801d948, 0x8edf2bef, 0xfd3b4ce3, 0xf7e1d151, 0x684c51d4, 0x0072d37d },
+  .y = { 0x3129ae7c, 0x2df8b840, 0x5365f4f6, 0xa7eef99b, 0xcdce5e8c, 0x2360b5fd,
+         0x1b2a36f1, 0x04f16d30, 0x491f03da, 0xd1a328cf, 0x7b84e758, 0x017592e1 },
+  .z = { 0xab8912e5, 0x2d6d451b, 0xd470e2e3, 0x24127e6b, 0xe42782d4, 0x3445312a,
+         0x4e4c959e, 0xb2b9d34a, 0x9767ba48, 0xaf086907, 0xbde4964f, 0x01a95d2a },
+  .t = { 0xe9538041, 0x009c8433, 0x4c85a76c, 0x36613479, 0x3e155e79, 0x8ed73bbd,
+         0xbf3d8888, 0x27af7202, 0xdf7d7964, 0xf32b68c4, 0x02a50ac4, 0x00327353 },
+};
 
-// Commands, see the register map at the top of ecdsa.v
-#define CMD_IDLE    0
-#define CMD_LOAD_M  1
-#define CMD_MONTMUL 2
+static const ec_point expected_G_plus_G = {
+  .x = { 0xb6de8390, 0x95bc1183, 0x18a4a297, 0x9356e66f, 0x45f22d77, 0x37076e62,
+         0x28276595, 0x8de5bac7, 0xde07cc63, 0xff60ae67, 0xc84936c1, 0x017b7761 },
+  .y = { 0xca8d626a, 0x2d467d85, 0x72e9de5d, 0x0107491d, 0xb7d58a41, 0x62941925,
+         0x718adff3, 0xdec31cca, 0x5747a213, 0x78e8e273, 0x17df2bfa, 0x00376622 },
+  .z = { 0x9f2793f6, 0xf9bfd9a3, 0x0a09c049, 0x491b0033, 0xf3e3f19d, 0xffc36d6a,
+         0x1ed8ee47, 0xc56d6b65, 0xe12c59c7, 0x44b9143d, 0xccc2b1aa, 0x01262ed8 },
+  .t = { 0x25b2319a, 0xd482fe43, 0xaf7c34e9, 0x6f3494a4, 0x152578d0, 0x57352cba,
+         0x05dc1ff7, 0xdcd51975, 0xce928564, 0xcaaa8cd8, 0x24dbc400, 0x00e37d05 },
+};
 
-// Status bits
-#define STATUS_DONE  (1 << 0)
-#define STATUS_IDLE  (1 << 1)
-#define STATUS_ERROR (1 << 2)
-
-// A 377-bit operand takes 12 words. Every DMA transfer is 32 words (1024 bit).
-#define OPERAND_WORDS 12
-#define DMA_WORDS     32
-
-// Buffers shared with the FPGA. They have to be 128-byte aligned.
-static alignas(128) uint32_t dma_in [DMA_WORDS];
-static alignas(128) uint32_t dma_out[DMA_WORDS];
-
-// Same testvector as tb_montgomery.v and tb_ecdsa_wrapper.v
-static const uint32_t tv_a[OPERAND_WORDS] = {
-  0x85e8916a, 0x0a056006, 0x2d6c3abb, 0x20060be1, 0xde94d88c, 0x12c00772,
-  0xa8b4f1e2, 0xd96fe122, 0x63d7e16c, 0x9a380d96, 0xb0f9f0ec, 0x001b8a55 };
-static const uint32_t tv_b[OPERAND_WORDS] = {
-  0x9bbd7275, 0x99f8364b, 0x8837de3d, 0x8142eb8c, 0x5f5fb704, 0x6a6ab12f,
-  0x702915d6, 0x72c5f3f5, 0x8bfb7aa1, 0xe00b13b9, 0xc5b8695e, 0x00d07020 };
-static const uint32_t tv_m[OPERAND_WORDS] = {
-  0x7a6e75f5, 0x7a65f040, 0x0b537e7c, 0xae2ab026, 0x1df61006, 0x6eec116e,
-  0xdb4ffcbb, 0x61606436, 0x4aed030c, 0xe66c6e84, 0x01b93e63, 0x0108fdf5 };
-static const uint32_t tv_expected[OPERAND_WORDS] = {
-  0x20168b8a, 0x6ee79cf7, 0x72b0e9c6, 0xf04b770b, 0x2c101d25, 0xfb625deb,
-  0x3d3ec09c, 0xf68c9e43, 0x686f246e, 0x267903ab, 0x7d8d92ab, 0x00575225 };
-
-// Write a command, wait until the FPGA is done, and release the command
-static void hw_run(uint32_t command) {
-  HWreg[COMMAND] = command;
-  while ((HWreg[STATUS] & STATUS_DONE) == 0);
-  HWreg[COMMAND] = CMD_IDLE;
-}
-
-// Load the modulus into the FPGA. It stays there until the next call.
-void hw_load_modulus(const uint32_t* m) {
-  memset(dma_in, 0, sizeof(dma_in));
-  memcpy(dma_in, m, OPERAND_WORDS * sizeof(uint32_t));
-  HWreg[RXADDR] = (uint32_t)dma_in;
-  hw_run(CMD_LOAD_M);
-}
-
-// res = a * b * R^-1 mod m, with R = 2^377 and m the loaded modulus
-void hw_montmul(const uint32_t* a, const uint32_t* b, uint32_t* res) {
-  memset(dma_in, 0, sizeof(dma_in));
-  memcpy(dma_in,      a, OPERAND_WORDS * sizeof(uint32_t));  // bits [376:0]
-  memcpy(dma_in + 16, b, OPERAND_WORDS * sizeof(uint32_t));  // bits [888:512]
-  HWreg[RXADDR] = (uint32_t)dma_in;	// where FPGA reads the data
-  HWreg[TXADDR] = (uint32_t)dma_out; // where FPGA writes the data
-  hw_run(CMD_MONTMUL);
-  memcpy(res, dma_out, OPERAND_WORDS * sizeof(uint32_t));
+static void load_point(ec_point* p, const uint32_t* x, const uint32_t* y,
+                       const uint32_t* z, const uint32_t* t) {
+  memcpy(p->x, x, sizeof(p->x));
+  memcpy(p->y, y, sizeof(p->y));
+  memcpy(p->z, z, sizeof(p->z));
+  memcpy(p->t, t, sizeof(p->t));
 }
 
 static void print_operand(const char* name, const uint32_t* src) {
@@ -79,6 +51,22 @@ static void print_operand(const char* name, const uint32_t* src) {
   xil_printf("\n\r");
 }
 
+static void check_point(const char* name, const ec_point* result, const ec_point* expected) {
+  if (memcmp(result, expected, sizeof(ec_point)) == 0) {
+    xil_printf("%s: PASS\n\r", name);
+  } else {
+    xil_printf("%s: FAIL\n\r", name);
+    print_operand("  X result  ", result->x);
+    print_operand("  X expected", expected->x);
+    print_operand("  Y result  ", result->y);
+    print_operand("  Y expected", expected->y);
+    print_operand("  Z result  ", result->z);
+    print_operand("  Z expected", expected->z);
+    print_operand("  T result  ", result->t);
+    print_operand("  T expected", expected->t);
+  }
+}
+
 int main() {
 
   init_platform();
@@ -86,26 +74,27 @@ int main() {
 
   xil_printf("Begin\n\r");
 
-  uint32_t result[OPERAND_WORDS];
+  ec_point G, P, result;
+  load_point(&G, G_X, G_Y, G_Z, G_T);
+  load_point(&P, Public_X, Public_Y, Public_Z, Public_T);
 
-  hw_load_modulus(tv_m);
+  ec_init(modulus, R2_N);
 
+  // Addition of two different points
 START_TIMING
-  hw_montmul(tv_a, tv_b, result);
+  ec_add(&G, &P, &result);
 STOP_TIMING
+  check_point("G + P", &result, &expected_G_plus_P);
 
-  uint32_t status = HWreg[STATUS];
+  // Doubling, with the result written over one of the inputs
+  memcpy(&result, &G, sizeof(ec_point));
+  ec_add(&result, &G, &result);
+  check_point("G + G", &result, &expected_G_plus_G);
+
+  uint32_t status = hw_status();
   xil_printf("STATUS %08x | Done %d | Idle %d | Error %d\n\r", (unsigned int)status,
     (status & STATUS_DONE) != 0, (status & STATUS_IDLE) != 0, (status & STATUS_ERROR) != 0);
-  xil_printf("Multiplier took %u FPGA clock cycles\n\r", (unsigned int)HWreg[MUL_CYCLES]);
-
-  print_operand("result  ", result);
-  print_operand("expected", tv_expected);
-
-  if (memcmp(result, tv_expected, sizeof(result)) == 0)
-    xil_printf("PASS\n\r");
-  else
-    xil_printf("FAIL\n\r");
+  xil_printf("Multiplier took %u FPGA clock cycles\n\r", (unsigned int)hw_mul_cycles());
 
   cleanup_platform();
 

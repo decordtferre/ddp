@@ -175,39 +175,77 @@ module tb_ecdsa_wrapper();
   localparam  COMMAND = 0, // r0
               RXADDR  = 4, // r1
               TXADDR  = 8; // r2
-              
+
   // Byte Addresses of 32-bit output registers (HW to SW)
-  localparam STATUS = 0;   
+  localparam  STATUS     = 0,   // r0
+              MUL_CYCLES = 12;  // r3
+
+  // Commands
+  localparam  CMD_IDLE    = 32'd0,
+              CMD_LOAD_M  = 32'd1,
+              CMD_MONTMUL = 32'd2;
 
   // Byte Addresses of 1024-bit distant memory locations
-  localparam  MEM0_ADDR  = 16'h00,
-              MEM1_ADDR  = 16'h80;
+  localparam  MEM0_ADDR  = 16'h000,  // modulus
+              MEM1_ADDR  = 16'h080,  // operands {B, A}
+              MEM2_ADDR  = 16'h100;  // result
 
   reg [31:0] reg_status;
+  reg [31:0] reg_cycles;
+
+  // Write a command, wait until the FPGA is done, and release the command
+  task run_command;
+    input [31:0] cmd;
+    begin
+      reg_write(COMMAND, cmd);
+      reg_read(STATUS, reg_status);
+      while (reg_status[0]==1'b0)
+      begin
+        #`LONG_WAIT;
+        reg_read(STATUS, reg_status);
+      end
+      reg_write(COMMAND, CMD_IDLE);
+    end
+  endtask
+
+  // Same testvector as tb_montgomery.v
+  // You can generate your own with the testvector generator python script
+  reg [376:0] in_a     = 377'h01b8a55b0f9f0ec9a380d9663d7e16cd96fe122a8b4f1e212c00772de94d88c20060be12d6c3abb0a05600685e8916a;
+  reg [376:0] in_b     = 377'h0d07020c5b8695ee00b13b98bfb7aa172c5f3f5702915d66a6ab12f5f5fb7048142eb8c8837de3d99f8364b9bbd7275;
+  reg [376:0] in_m     = 377'h108fdf501b93e63e66c6e844aed030c61606436db4ffcbb6eec116e1df61006ae2ab0260b537e7c7a65f0407a6e75f5;
+  reg [376:0] expected = 377'h05752257d8d92ab267903ab686f246ef68c9e433d3ec09cfb625deb2c101d25f04b770b72b0e9c66ee79cf720168b8a;
 
   initial begin
 
     #`LONG_WAIT
 
-    mem_write(MEM0_ADDR, 1024'd1);
-    mem_write(MEM1_ADDR, 1024'd2);
+    // Memory contents, as the software would prepare them:
+    // every 377-bit value is padded with zeros to 512 bits
+    mem_write(MEM0_ADDR, {647'b0, in_m});
+    mem_write(MEM1_ADDR, {135'b0, in_b, 135'b0, in_a});
+    mem_write(MEM2_ADDR, 1024'b0);
 
+    // Load the modulus
     reg_write(RXADDR, MEM0_ADDR);
-    reg_write(TXADDR, MEM1_ADDR);
+    run_command(CMD_LOAD_M);
 
-    reg_write(COMMAND, 32'h00000001);
-    
-    // Poll Done Signal
-    reg_read(STATUS, reg_status);
-    while (reg_status[0]==1'b0)
-    begin
-      #`LONG_WAIT;
-      reg_read(STATUS, reg_status);
-    end
-    
-    reg_write(COMMAND, 32'h00000000);
+    // Multiply
+    reg_write(RXADDR, MEM1_ADDR);
+    reg_write(TXADDR, MEM2_ADDR);
+    run_command(CMD_MONTMUL);
 
-    mem_read(MEM1_ADDR);
+    reg_read(MUL_CYCLES, reg_cycles);
+    mem_read(MEM2_ADDR);
+
+    $display("result calculated=%x", mem_dout[376:0]);
+    $display("result expected  =%x", expected);
+    $display("multiplier cycles=%0d", reg_cycles);
+    if (mem_dout === {647'b0, expected})
+      $display("PASS");
+    else if (mem_dout[376:0] === {377{1'b1}})
+      $display("FAIL: result is all ones, is montgomery.v still the empty template?");
+    else
+      $display("FAIL");
 
     $finish;
 

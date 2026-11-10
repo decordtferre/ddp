@@ -66,8 +66,8 @@ void hw_montmul(const uint32_t* a, const uint32_t* b, uint32_t* res) {
   memset(dma_in, 0, sizeof(dma_in));
   memcpy(dma_in,      a, OPERAND_WORDS * sizeof(uint32_t));  // bits [376:0]
   memcpy(dma_in + 16, b, OPERAND_WORDS * sizeof(uint32_t));  // bits [888:512]
-  HWreg[RXADDR] = (uint32_t)dma_in;
-  HWreg[TXADDR] = (uint32_t)dma_out;
+  HWreg[RXADDR] = (uint32_t)dma_in;	// where FPGA reads the data
+  HWreg[TXADDR] = (uint32_t)dma_out; // where FPGA writes the data
   hw_run(CMD_MONTMUL);
   memcpy(res, dma_out, OPERAND_WORDS * sizeof(uint32_t));
 }
